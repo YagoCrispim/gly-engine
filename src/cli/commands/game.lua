@@ -14,7 +14,7 @@ local function run(args)
         if BOOTSTRAP then
             return false, 'core love2d is not avaliable in bootstraped CLI.'
         end
-        local love = 'love'
+        local love = '/mnt/FE9499189498D50D/Apps/LOVE/love-11.5-x86_64.AppImage'
         local screen = args['screen'] and '-screen '..args.screen or ''
         local command = love..' src/engine/core/love -'..screen..' '..args.game
         if not os or not os.execute then
